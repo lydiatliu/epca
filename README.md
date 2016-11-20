@@ -4,8 +4,8 @@ Software implementation for *e*PCA and denoising as described in the [paper](htt
 
 
 ## Contents
-* software/ : contains software for applying ePCA on one's own datasets. In particular, ```exp_fam_pca.m``` implements ePCA and ```wiener_filter.m``` implements the generalized wiener filter (or EBLP) for denoising, as introduced in our paper.
-* experiments/ : contains code for reproducing experimental results and plots in our paper.
+* software/ : software for applying ePCA on one's own datasets. In particular, ```exp_fam_pca.m``` implements ePCA and ```wiener_filter.m``` implements the generalized wiener filter (or EBLP) for denoising, as introduced in our paper.
+* experiments/ : scripts for reproducing experimental results and plots in our paper.
 
 ## Requirements
 MATLAB. No other downloads are required.
