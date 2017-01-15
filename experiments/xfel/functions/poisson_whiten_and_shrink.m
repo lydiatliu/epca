@@ -24,7 +24,7 @@ V0 = V(:, ind);
 %% number of eigenvalues to shrink and keep = rank_guess
 
 %shrink eigenvalues and recompute eigenvectors
-white_shr_eval = op_norm_shrink2( E, gamma); 
+white_shr_eval = op_norm_shrink2( E+1, gamma)-1;
 D = diag(sample_mean.^(1/2));
 recolored_covar = (D*V0*diag(sqrt(white_shr_eval)))*(D*V0*diag(sqrt(white_shr_eval)))';  % M*M' to avoid loss of symmetry for numerical reasons
 [V_col,E_col] = eigs(recolored_covar, n_sig);
